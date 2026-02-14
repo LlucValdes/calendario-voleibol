@@ -1,12 +1,15 @@
 name: Actualizar Calendario
 
 on:
+  push: # <--- ESTO ACTIVA LA EJECUCIÓN AL HACER PUSH
+    branches:
+      - main # O 'master', dependiendo de cómo se llame tu rama principal
   schedule:
     - cron: "0 8 * * *" # Ejecuta todos los días a las 08:00 UTC
   workflow_dispatch: # Permite ejecutarlo manualmente con un botón
 
 permissions:
-  contents: write # Permiso vital para poder guardar el archivo .ics
+  contents: write
 
 jobs:
   build:

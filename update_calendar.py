@@ -3,12 +3,11 @@ from bs4 import BeautifulSoup
 from ics import Calendar, Event
 import datetime
 import re
-import pytz  # Librería para zonas horarias
+import pytz
 
 # --- CONFIGURACIÓN ---
 URL_DATOS = "https://www.voleibolib.net/JSON/get_calendario.asp?id=7946"
 OUTPUT_FILE = 'cv_bunyola.ics'
-# Definimos la zona horaria de España
 TZ_MADRID = pytz.timezone('Europe/Madrid')
 
 PABELLONES_CONOCIDOS = {
@@ -27,12 +26,12 @@ PABELLONES_CONOCIDOS = {
 }
 
 def get_matches():
-    print(f"🔄 Descargando datos con zona horaria Madrid...")
+    print(f"🔄 Descargando datos y convirtiendo a UTC...")
     matches = []
     
     try:
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0',
             'Referer': 'https://www.voleibolib.net/'
         }
         
@@ -69,7 +68,6 @@ def get_matches():
                     contenido = strong.get_text(" ", strip=True)
                     m_date = re.search(r'(\d{2}/\d{2}/\d{4})', contenido)
                     if m_date: fecha_str = m_date.group(1)
-                    
                     m_time = re.search(r'(\d{2}:\d{2})', contenido)
                     if m_time:
                         hora_str = m_time.group(1)
@@ -92,17 +90,19 @@ def get_matches():
                         break
                 
                 try:
-                    # Crear fecha 'naive' (sin zona horaria)
                     if all_day:
-                        dt_naive = datetime.datetime.strptime(fecha_str, "%d/%m/%Y")
-                        # Para eventos de todo el día, no asignamos zona horaria estricta
-                        # pero ics lo maneja bien si es date object
-                        begin = dt_naive.date()
+                        # Eventos todo el día son date objects simples
+                        begin = datetime.datetime.strptime(fecha_str, "%d/%m/%Y").date()
                     else:
+                        # 1. Creamos la fecha "naive" (sin zona)
                         dt_naive = datetime.datetime.strptime(f"{fecha_str} {hora_str}", "%d/%m/%Y %H:%M")
-                        # ASIGNAR ZONA HORARIA MADRID
-                        # .localize gestiona automáticamente el cambio de hora verano/invierno
-                        begin = TZ_MADRID.localize(dt_naive)
+                        
+                        # 2. Le decimos a Python: "Esto es hora de Madrid"
+                        dt_madrid = TZ_MADRID.localize(dt_naive)
+                        
+                        # 3. Lo convertimos a UTC para el archivo ICS
+                        # ICS funcionará mejor si le damos la hora ZULU (UTC)
+                        begin = dt_madrid.astimezone(pytz.utc)
                     
                     matches.append({
                         'name': f"🏐 {local} vs {visitante}",
@@ -141,7 +141,7 @@ def generate_ics(matches):
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.writelines(c.serialize_iter())
     
-    print(f"✅ Calendario generado correctamente con TimeZone Madrid.")
+    print(f"✅ Calendario generado correctamente en UTC.")
 
 if __name__ == "__main__":
     data = get_matches()
