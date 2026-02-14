@@ -1,0 +1,37 @@
+name: Actualizar Calendario
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # Ejecuta todos los días a las 08:00 UTC
+  workflow_dispatch: # Permite ejecutarlo manualmente con un botón
+
+permissions:
+  contents: write # Permiso vital para poder guardar el archivo .ics
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Chequear repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar librerías
+        run: |
+          pip install requests beautifulsoup4 ics
+
+      - name: Ejecutar script de calendario
+        run: python update_calendar.py
+
+      - name: Guardar cambios (Commit & Push)
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add cv_bunyola.ics
+          # Solo hace commit si hay cambios
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Actualizar calendario automático" && git push)
