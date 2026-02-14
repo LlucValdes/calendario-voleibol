@@ -8,7 +8,10 @@ import pytz
 # --- CONFIGURACIÓN ---
 URL_DATOS = "https://www.voleibolib.net/JSON/get_calendario.asp?id=7946"
 OUTPUT_FILE = 'cv_bunyola.ics'
+
+# Definimos zonas horarias explícitas
 TZ_MADRID = pytz.timezone('Europe/Madrid')
+TZ_UTC = pytz.utc
 
 PABELLONES_CONOCIDOS = {
     "SCANNER CV SON FERRER": "Pabellón Son Ferrer (Calvià)",
@@ -26,7 +29,7 @@ PABELLONES_CONOCIDOS = {
 }
 
 def get_matches():
-    print(f"🔄 Descargando datos y convirtiendo a UTC...")
+    print(f"🔄 Descargando datos y convirtiendo a UTC estricto...")
     matches = []
     
     try:
@@ -91,18 +94,18 @@ def get_matches():
                 
                 try:
                     if all_day:
-                        # Eventos todo el día son date objects simples
+                        # Eventos todo el día son date objects
                         begin = datetime.datetime.strptime(fecha_str, "%d/%m/%Y").date()
                     else:
-                        # 1. Creamos la fecha "naive" (sin zona)
+                        # 1. Crear fecha "naive"
                         dt_naive = datetime.datetime.strptime(f"{fecha_str} {hora_str}", "%d/%m/%Y %H:%M")
                         
-                        # 2. Le decimos a Python: "Esto es hora de Madrid"
+                        # 2. Localizarla en Madrid (esto le da la info de +1 o +2 según verano/invierno)
                         dt_madrid = TZ_MADRID.localize(dt_naive)
                         
-                        # 3. Lo convertimos a UTC para el archivo ICS
-                        # ICS funcionará mejor si le damos la hora ZULU (UTC)
-                        begin = dt_madrid.astimezone(pytz.utc)
+                        # 3. CONVERTIR A UTC (ZULU)
+                        # Esto es clave: guardamos el evento en hora universal
+                        begin = dt_madrid.astimezone(TZ_UTC)
                     
                     matches.append({
                         'name': f"🏐 {local} vs {visitante}",
