@@ -165,8 +165,14 @@ def generate_ics(matches):
         e.location = m['location']
         c.events.add(e)
         
+    # Serialize and inject custom calendar name
+    lines = list(c.serialize_iter())
+    # Insert X-WR-CALNAME after the first line (BEGIN:VCALENDAR) or wherever appropriate
+    # Usually after VERSION or PRODID is fine. We'll put it early.
+    lines.insert(1, "X-WR-CALNAME:CV Bunyola\n")
+    
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-        f.writelines(c.serialize_iter())
+        f.writelines(lines)
     
     print(f"✅ Calendario generado correctamente: {OUTPUT_FILE}")
 
