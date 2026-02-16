@@ -137,6 +137,14 @@ SUMMARY:🏐 ES CRUCE CV MANACOR vs C.V. BUNYOLA
 UID:bunyola-match-jornada-15@voleibolib.net
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Jornada 14\nResultado: 3 - 1\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Consultar web
+DTSTART:20260207T180000Z
+SUMMARY:🏐 C.V. BUNYOLA vs VIAJES LLABRES CV. PÒRTOL
+UID:bunyola-match-jornada-14@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Jornada 13\nResultado: 3 - 2\n\nActualizado autom. vía Voleibolib
 DURATION:PT2H
 LOCATION:Consultar web
