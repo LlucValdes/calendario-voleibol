@@ -5,7 +5,7 @@ on:
     branches:
       - main # O 'master', dependiendo de cómo se llame tu rama principal
   schedule:
-    - cron: "0 8 * * *" # Ejecuta todos los días a las 08:00 UTC
+    - cron: "0 23 * * *" # 23:00 UTC = 00:00 CET (Winter) / 01:00 CEST (Summer)
   workflow_dispatch: # Permite ejecutarlo manualmente con un botón
 
 permissions:
