@@ -126,7 +126,8 @@ def get_matches():
                         'begin': begin,
                         'all_day': all_day,
                         'description': f"Jornada {jor}\nResultado: {resultado}",
-                        'location': ubicacion
+                        'location': ubicacion,
+                        'uid': f"bunyola-match-jornada-{jor}@voleibolib.net"
                     })
                     
                 except ValueError as ve:
@@ -153,6 +154,7 @@ def generate_ics(matches):
         e = Event()
         e.name = m['name']
         e.begin = m['begin']
+        e.uid = m['uid']
         
         if m['all_day']:
             e.make_all_day()

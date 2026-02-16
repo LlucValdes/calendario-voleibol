@@ -2,123 +2,11 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Jornada 1\nResultado: 2 - 3\n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Pol. Germans Escales
-DTSTART:20251011T160000Z
-SUMMARY:🏐 RAFAL VELL vs C.V. BUNYOLA
-UID:4ea37e53-2607-43aa-8c9e-f000a2cd7ca6@4ea3.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 7\nResultado: 2 - 3\n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Consultar web
-DTSTART:20251123T100000Z
-SUMMARY:🏐 MAYURQA VOLEY PALMA vs C.V. BUNYOLA
-UID:6201c2a0-fef0-46d6-87e3-ef99e80eecae@6201.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 14\nResultado: 3 - 1\n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Consultar web
-DTSTART:20260207T180000Z
-SUMMARY:🏐 C.V. BUNYOLA vs VIAJES LLABRES CV. PÒRTOL
-UID:d0d2b953-b6dd-4c7f-a63d-2f481a89104b@d0d2.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 10\nResultado: 3 - 1\n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Pav. IES Son Ferrer
-DTSTART:20260111T170000Z
-SUMMARY:🏐 SCANNER CV SON FERRER vs C.V. BUNYOLA
-UID:33fa2f36-eae6-415c-ad81-cc12a04f3655@33fa.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 18\nResultado: \n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Pav. Juan Pericas Riera
-DTSTART:20260314T170000Z
-SUMMARY:🏐 C.V. BUNYOLA vs MAYURQA VOLEY PALMA
-UID:f66d6f62-083e-434d-8a95-ae24805d4648@f66d.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 4\nResultado: 3 - 1\n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Pav. Juan Pericas Riera
-DTSTART:20251101T150000Z
-SUMMARY:🏐 C.V. BUNYOLA vs ES CRUCE CV MANACOR
-UID:e0323af5-3d16-4954-b590-9550bfa9652a@e032.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 5\nResultado: 3 - 0\n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Pav. Municipal de Ciutadella
-DTSTART:20251214T110000Z
-SUMMARY:🏐 CV CIUTADELLA BIOSPORT vs C.V. BUNYOLA
-UID:a6c1001b-206f-48cc-b96d-366731247d03@a6c1.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 2\nResultado: 3 - 1\n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Consultar web
-DTSTART:20251018T173000Z
-SUMMARY:🏐 C.V. BUNYOLA vs PALMA ESPORTS
-UID:9709e691-c736-46ce-9275-0fe8f38bea02@9709.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 13\nResultado: 3 - 2\n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Consultar web
-DTSTART:20260131T110000Z
-SUMMARY:🏐 PALMA ESPORTS vs C.V. BUNYOLA
-UID:84006479-2f2d-4c35-a6ae-5f00b3dbd249@8400.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 8\nResultado: 3 - 2\n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Pav. Juan Pericas Riera
-DTSTART:20251204T194500Z
-SUMMARY:🏐 C.V. BUNYOLA vs ANAYA MAYURQA VOLEY PALMA
-UID:557f918b-10a9-42da-946d-20e70e05163a@557f.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 11\nResultado: 2 - 3\n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Consultar web
-DTSTART:20260122T200000Z
-SUMMARY:🏐 C.V. BUNYOLA vs CASA NOVA Volei Muro
-UID:22a4d05e-845e-4dc4-be54-230b2483f81d@22a4.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 3\nResultado: 3 - 2\n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Consultar web
-DTSTART:20251025T180000Z
-SUMMARY:🏐 VIAJES LLABRES CV. PÒRTOL vs C.V. BUNYOLA
-UID:58f6fceb-df68-4291-ba6f-fbaaad5f6c32@58f6.org
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260418
 DESCRIPTION:Jornada 22\nResultado: \n\nActualizado autom. vía Voleibolib
 LOCATION:Consultar web
 SUMMARY:🏐 CASA NOVA Volei Muro vs C.V. BUNYOLA
-UID:9a7aca55-1836-4f6b-b6e8-493183430b6a@9a7a.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 12\nResultado: 3 - 0\n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Pav. Juan Pericas Riera
-DTSTART:20260124T180000Z
-SUMMARY:🏐 C.V. BUNYOLA vs RAFAL VELL
-UID:4574eeb0-ab96-4fcb-95bd-91090256f15e@4574.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 20\nResultado: \n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Pav. Son Angelats
-DTSTART:20260328T150000Z
-SUMMARY:🏐 CVS BAR SON ANGELATS SOLLER vs C.V. BUNYOLA
-UID:dc8075d5-c05b-4f2c-b876-8dd9a0a8c146@dc80.org
+UID:bunyola-match-jornada-22@voleibolib.net
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Jornada 9\nResultado: 3 - 0\n\nActualizado autom. vía Voleibolib
@@ -126,46 +14,38 @@ DURATION:PT2H
 LOCATION:Pav. Juan Pericas Riera
 DTSTART:20251211T194500Z
 SUMMARY:🏐 C.V. BUNYOLA vs CVS BAR SON ANGELATS SOLLER
-UID:8eb314aa-b306-4466-9b4e-5677e7387230@8eb3.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 19\nResultado: \n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Pabellon UIB
-DTSTART:20260321T090000Z
-SUMMARY:🏐 ANAYA MAYURQA VOLEY PALMA vs C.V. BUNYOLA
-UID:b013cef0-24ed-4f0f-8ef8-aa43782d70dd@b013.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Jornada 15\nResultado: 1 - 3\n\nActualizado autom. vía Voleibolib
-DURATION:PT2H
-LOCATION:Consultar web
-DTSTART:20260215T110000Z
-SUMMARY:🏐 ES CRUCE CV MANACOR vs C.V. BUNYOLA
-UID:5a6dc3c3-ab33-48b6-81a9-936441872614@5a6d.org
+UID:bunyola-match-jornada-9@voleibolib.net
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260411
 DESCRIPTION:Jornada 21\nResultado: \n\nActualizado autom. vía Voleibolib
 LOCATION:Consultar web
 SUMMARY:🏐 C.V. BUNYOLA vs SCANNER CV SON FERRER
-UID:231b8bec-4e9f-4d03-aa74-634138029052@231b.org
+UID:bunyola-match-jornada-21@voleibolib.net
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Jornada 16\nResultado: 1 - 3\n\nActualizado autom. vía Voleibolib
+DESCRIPTION:Jornada 8\nResultado: 3 - 2\n\nActualizado autom. vía Voleibolib
 DURATION:PT2H
 LOCATION:Pav. Juan Pericas Riera
-DTSTART:20260201T100000Z
-SUMMARY:🏐 C.V. BUNYOLA vs CV CIUTADELLA BIOSPORT
-UID:07aa2ad6-66c7-4eb7-b0ad-e4961512acaa@07aa.org
+DTSTART:20251204T194500Z
+SUMMARY:🏐 C.V. BUNYOLA vs ANAYA MAYURQA VOLEY PALMA
+UID:bunyola-match-jornada-8@voleibolib.net
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Jornada 17\nResultado: \n\nActualizado autom. vía Voleibolib
+DESCRIPTION:Jornada 20\nResultado: \n\nActualizado autom. vía Voleibolib
 DURATION:PT2H
-LOCATION:Pavelló Municipal Es Castell
-DTSTART:20260308T113000Z
-SUMMARY:🏐 CLUB VOLEI ES CASTELL vs C.V. BUNYOLA
-UID:0f24f1d0-25ea-4bdb-9daa-85a23416b504@0f24.org
+LOCATION:Pav. Son Angelats
+DTSTART:20260328T150000Z
+SUMMARY:🏐 CVS BAR SON ANGELATS SOLLER vs C.V. BUNYOLA
+UID:bunyola-match-jornada-20@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 7\nResultado: 2 - 3\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Consultar web
+DTSTART:20251123T100000Z
+SUMMARY:🏐 MAYURQA VOLEY PALMA vs C.V. BUNYOLA
+UID:bunyola-match-jornada-7@voleibolib.net
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Jornada 6\nResultado: 3 - 2\n\nActualizado autom. vía Voleibolib
@@ -173,6 +53,126 @@ DURATION:PT2H
 LOCATION:Consultar web
 DTSTART:20251115T110000Z
 SUMMARY:🏐 C.V. BUNYOLA vs CLUB VOLEI ES CASTELL
-UID:960c0cd6-3558-447c-95ae-c2febe18d406@960c.org
+UID:bunyola-match-jornada-6@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 5\nResultado: 3 - 0\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Pav. Municipal de Ciutadella
+DTSTART:20251214T110000Z
+SUMMARY:🏐 CV CIUTADELLA BIOSPORT vs C.V. BUNYOLA
+UID:bunyola-match-jornada-5@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 4\nResultado: 3 - 1\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Pav. Juan Pericas Riera
+DTSTART:20251101T150000Z
+SUMMARY:🏐 C.V. BUNYOLA vs ES CRUCE CV MANACOR
+UID:bunyola-match-jornada-4@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 19\nResultado: \n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Pabellon UIB
+DTSTART:20260321T090000Z
+SUMMARY:🏐 ANAYA MAYURQA VOLEY PALMA vs C.V. BUNYOLA
+UID:bunyola-match-jornada-19@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 3\nResultado: 3 - 2\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Consultar web
+DTSTART:20251025T180000Z
+SUMMARY:🏐 VIAJES LLABRES CV. PÒRTOL vs C.V. BUNYOLA
+UID:bunyola-match-jornada-3@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 18\nResultado: \n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Pav. Juan Pericas Riera
+DTSTART:20260314T170000Z
+SUMMARY:🏐 C.V. BUNYOLA vs MAYURQA VOLEY PALMA
+UID:bunyola-match-jornada-18@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 2\nResultado: 3 - 1\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Consultar web
+DTSTART:20251018T173000Z
+SUMMARY:🏐 C.V. BUNYOLA vs PALMA ESPORTS
+UID:bunyola-match-jornada-2@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 17\nResultado: \n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Pavelló Municipal Es Castell
+DTSTART:20260308T113000Z
+SUMMARY:🏐 CLUB VOLEI ES CASTELL vs C.V. BUNYOLA
+UID:bunyola-match-jornada-17@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 1\nResultado: 2 - 3\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Pol. Germans Escales
+DTSTART:20251011T160000Z
+SUMMARY:🏐 RAFAL VELL vs C.V. BUNYOLA
+UID:bunyola-match-jornada-1@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 16\nResultado: 1 - 3\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Pav. Juan Pericas Riera
+DTSTART:20260201T100000Z
+SUMMARY:🏐 C.V. BUNYOLA vs CV CIUTADELLA BIOSPORT
+UID:bunyola-match-jornada-16@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 15\nResultado: 1 - 3\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Consultar web
+DTSTART:20260215T110000Z
+SUMMARY:🏐 ES CRUCE CV MANACOR vs C.V. BUNYOLA
+UID:bunyola-match-jornada-15@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 14\nResultado: 3 - 1\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Consultar web
+DTSTART:20260207T180000Z
+SUMMARY:🏐 C.V. BUNYOLA vs VIAJES LLABRES CV. PÒRTOL
+UID:bunyola-match-jornada-14@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 13\nResultado: 3 - 2\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Consultar web
+DTSTART:20260131T110000Z
+SUMMARY:🏐 PALMA ESPORTS vs C.V. BUNYOLA
+UID:bunyola-match-jornada-13@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 12\nResultado: 3 - 0\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Pav. Juan Pericas Riera
+DTSTART:20260124T180000Z
+SUMMARY:🏐 C.V. BUNYOLA vs RAFAL VELL
+UID:bunyola-match-jornada-12@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 11\nResultado: 2 - 3\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Consultar web
+DTSTART:20260122T200000Z
+SUMMARY:🏐 C.V. BUNYOLA vs CASA NOVA Volei Muro
+UID:bunyola-match-jornada-11@voleibolib.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Jornada 10\nResultado: 3 - 1\n\nActualizado autom. vía Voleibolib
+DURATION:PT2H
+LOCATION:Pav. IES Son Ferrer
+DTSTART:20260111T170000Z
+SUMMARY:🏐 SCANNER CV SON FERRER vs C.V. BUNYOLA
+UID:bunyola-match-jornada-10@voleibolib.net
 END:VEVENT
 END:VCALENDAR
