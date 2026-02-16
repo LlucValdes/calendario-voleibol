@@ -5,10 +5,12 @@ import datetime
 import re
 import pytz
 import time
+import json
 
 # --- CONFIGURACIÓN ---
 URL_BASE = "https://www.voleibolib.net/JSON/get_resultados.asp?id=7946&jor={}"
-OUTPUT_FILE = 'cv_bunyola.ics'
+OUTPUT_FILE_ICS = 'cv_bunyola.ics'
+OUTPUT_FILE_JSON = 'matches.json'
 TEAM_NAME = "BUNYOLA"
 
 # Definimos zonas horarias explícitas
@@ -171,11 +173,32 @@ def generate_ics(matches):
     # Usually after VERSION or PRODID is fine. We'll put it early.
     lines.insert(1, "X-WR-CALNAME:CV Bunyola\n")
     
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+    with open(OUTPUT_FILE_ICS, 'w', encoding='utf-8') as f:
         f.writelines(lines)
     
-    print(f"✅ Calendario generado correctamente: {OUTPUT_FILE}")
+    print(f"✅ Calendario generado correctamente: {OUTPUT_FILE_ICS}")
+
+def save_json(matches):
+    """Saves matches to a JSON file for external consumption (Google Apps Script)."""
+    if not matches:
+        return
+
+    # Convert datetime objects to strings for JSON serialization
+    serializable_matches = []
+    for m in matches:
+        match_dict = m.copy()
+        # Convert date/datetime to ISO string
+        if isinstance(match_dict['begin'], (datetime.date, datetime.datetime)):
+            match_dict['begin'] = match_dict['begin'].isoformat()
+        
+        serializable_matches.append(match_dict)
+
+    with open(OUTPUT_FILE_JSON, 'w', encoding='utf-8') as f:
+        json.dump(serializable_matches, f, ensure_ascii=False, indent=2)
+    
+    print(f"✅ JSON generado correctamente: {OUTPUT_FILE_JSON}")
 
 if __name__ == "__main__":
     data = get_matches()
     generate_ics(data)
+    save_json(data)
