@@ -18,9 +18,10 @@ SUMMARY:🏐 C.V. BUNYOLA vs CVS BAR SON ANGELATS SOLLER
 UID:bunyola-match-jornada-9@voleibolib.net
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260411
 DESCRIPTION:Jornada 21\nResultado: \n\nActualizado autom. vía Voleibolib
-LOCATION:Consultar web
+DURATION:PT2H
+LOCATION:Pav. Juan Pericas Riera
+DTSTART:20260411T150000Z
 SUMMARY:🏐 C.V. BUNYOLA vs SCANNER CV SON FERRER
 UID:bunyola-match-jornada-21@voleibolib.net
 END:VEVENT
