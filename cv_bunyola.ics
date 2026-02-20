@@ -3,9 +3,10 @@ X-WR-CALNAME:CV Bunyola
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260418
 DESCRIPTION:Jornada 22\nResultado: \n\nActualizado autom. vía Voleibolib
-LOCATION:Consultar web
+DURATION:PT2H
+LOCATION:Pol. Municipal de Muro
+DTSTART:20260419T090000Z
 SUMMARY:🏐 CASA NOVA Volei Muro vs C.V. BUNYOLA
 UID:bunyola-match-jornada-22@voleibolib.net
 END:VEVENT
