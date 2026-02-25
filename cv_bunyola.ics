@@ -22,7 +22,7 @@ BEGIN:VEVENT
 DESCRIPTION:Jornada 21\nResultado: \n\nActualizado autom. vía Voleibolib
 DURATION:PT2H
 LOCATION:Pav. Juan Pericas Riera
-DTSTART:20260411T150000Z
+DTSTART:20260411T180000Z
 SUMMARY:🏐 C.V. BUNYOLA vs SCANNER CV SON FERRER
 UID:bunyola-match-jornada-21@voleibolib.net
 END:VEVENT
