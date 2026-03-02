@@ -109,7 +109,7 @@ END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Jornada 17\nResultado: \n\nActualizado autom. vía Voleibolib
 DURATION:PT2H
-LOCATION:Pavelló Municipal Es Castell
+LOCATION:Consultar web
 DTSTART:20260308T113000Z
 SUMMARY:🏐 CLUB VOLEI ES CASTELL vs C.V. BUNYOLA
 UID:bunyola-match-jornada-17@voleibolib.net
@@ -141,7 +141,7 @@ END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Jornada 14\nResultado: 3 - 1\n\nActualizado autom. vía Voleibolib
 DURATION:PT2H
-LOCATION:Consultar web
+LOCATION:Pav. Juan Pericas Riera
 DTSTART:20260207T180000Z
 SUMMARY:🏐 C.V. BUNYOLA vs VIAJES LLABRES CV. PÒRTOL
 UID:bunyola-match-jornada-14@voleibolib.net
