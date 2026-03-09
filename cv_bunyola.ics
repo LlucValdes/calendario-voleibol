@@ -93,7 +93,7 @@ END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Jornada 18\nResultado: \n\nActualizado autom. vía Voleibolib
 DURATION:PT2H
-LOCATION:Pav. Juan Pericas Riera
+LOCATION:Consultar web
 DTSTART:20260314T170000Z
 SUMMARY:🏐 C.V. BUNYOLA vs MAYURQA VOLEY PALMA
 UID:bunyola-match-jornada-18@voleibolib.net
