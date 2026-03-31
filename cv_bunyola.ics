@@ -77,7 +77,7 @@ END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Jornada 19\nResultado: 3 - 1\n\nActualizado autom. vía Voleibolib
 DURATION:PT2H
-LOCATION:Consultar web
+LOCATION:Pabellon UIB
 DTSTART:20260321T090000Z
 SUMMARY:🏐 ANAYA MAYURQA VOLEY PALMA vs C.V. BUNYOLA
 UID:bunyola-match-jornada-19@voleibolib.net
