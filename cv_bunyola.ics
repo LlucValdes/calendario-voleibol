@@ -5,7 +5,7 @@ PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DESCRIPTION:Jornada 22\nResultado: \n\nActualizado autom. vía Voleibolib
 DURATION:PT2H
-LOCATION:Pol. Municipal de Muro
+LOCATION:Consultar web
 DTSTART:20260419T090000Z
 SUMMARY:🏐 CASA NOVA Volei Muro vs C.V. BUNYOLA
 UID:bunyola-match-jornada-22@voleibolib.net
