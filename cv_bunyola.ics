@@ -5,7 +5,7 @@ PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DESCRIPTION:Jornada 22\nResultado: 3 - 1\n\nActualizado autom. vía Voleibolib
 DURATION:PT2H
-LOCATION:Consultar web
+LOCATION:Pol. Municipal de Muro
 DTSTART:20260419T090000Z
 SUMMARY:🏐 CASA NOVA Volei Muro vs C.V. BUNYOLA
 UID:bunyola-match-jornada-22@voleibolib.net
@@ -21,7 +21,7 @@ END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Jornada 21\nResultado: 0 - 3\n\nActualizado autom. vía Voleibolib
 DURATION:PT2H
-LOCATION:Consultar web
+LOCATION:Pav. Juan Pericas Riera
 DTSTART:20260411T180000Z
 SUMMARY:🏐 C.V. BUNYOLA vs SCANNER CV SON FERRER
 UID:bunyola-match-jornada-21@voleibolib.net
